@@ -10,12 +10,12 @@
     <title>Document</title>
 </head>
 <body onload="startTime()" class="bg-primary">
-   
+
     <input type="" name="" id="tim">
     <div id="first" class="bg-primary" >
 <marquee><b style="color: orangered; font-size: 25px;">press the start button please...</b></marquee>
 <b style="color: rgb(9, 255, 9); font-size: 35px; margin-left: 20px;">welcome to transport counter ..........</b><br><br>
-<img src="img/transport.jpeg" style="margin-left: 30%; width: 40%; height: 45%;"><br>
+<img src="img/download.jpg" style="margin-left: 30%; width: 40%; height: 45%;"><br>
 <button onclick="strt()" class="bg-warning" style="font-size: 40px; border-radius: 50px; margin-top: 20%; margin-left: 45%;">start</button>
     </div>
 
@@ -23,7 +23,7 @@
   <marquee> <b id="mar2" style="display: none;">add more at the below button.......</b></marquee>
     <div id="result">
         <div id="tt">
-    <h1 class="tr"><i class="fa fa-truck">transport</i> <p class="tp"><i class="fa fa-helicopter">counter</i></p></h1></div>       
+    <h1 class="tr"><i class="fa fa-truck">transport</i> <p class="tp"><i class="fa fa-helicopter">counter</i></p></h1></div>
         <div id="taxi"><strong><i class="fa fa-taxi"><p id="cab"></i></p></strong>
             <input type="number" name="" id="inpu" disabled><br>
             <button class="btn bg-warning" onclick="plus()">ADD</button>
@@ -82,7 +82,7 @@
 <script type="text/javascript">
     // time & stopwatch
 function startTime() {
-   
+
 var today = new Date();
    var h = today.getHours();
    var m = today.getMinutes();
@@ -104,13 +104,13 @@ function strt() {
     document.getElementById('mar1').style.display = 'block';
     document.getElementById('first').style.display = 'none';
     document.getElementById('tt').style.display = 'block';
-    
+
 
    }
 
 
-   
-    
+
+
 	// The pop-up menu
 	function pop() {
 		document.getElementById('pop').style.display = "block";
@@ -132,27 +132,27 @@ document.getElementById('anw').style.display = "block";
        cab.innerHTML= w;
     // alert('please insert some text to get started');
     document.getElementById('taxi').style.display = "block";
-        
+
            document.getElementById('pop').style.display = "none";
-}   
-    
-    
+}
+
+
     else if (w === "bike" || w=== "motorcycle") {
         caba.innerHTML= w;
         document.getElementById('bike').style.display = "block";
-         
+
     document.getElementById('pop').style.display = "none";
 
     } else if (w=== "car" || w=== "motor") {
         cabb.innerHTML= w;
         document.getElementById('car').style.display = "block";
-         
+
     document.getElementById('pop').style.display = "none";
 
     } else if (w ==="truck" || w==="trailer") {
         cabc.innerHTML= w;
         document.getElementById('truck').style.display = "block";
-         
+
     document.getElementById('pop').style.display = "none";
 
     } else if (w === "bicycle" || w=== "keke") {
@@ -161,9 +161,9 @@ cabd.innerHTML= w;
     document.getElementById('pop').style.display = "none";
 
     } else if (w === input.value) {
-        
+
         document.getElementById('pop').style.display = "none";
-        
+
                result.innerHTML += '<div id="qwe"><strong><p id="caba">' + input.value + '</p></strong>' + ' <input type="number" id="bt" disabled> <br>' + '<button id="cl" class="btn bg-warning">ADD</button>' +  ' <button class="btn bg-warning" id="clw">MINUS</button> <button id="rm" class="btn bg-warning"> REMOVE</button></div><br>';
 
 document.getElementById('cl').onclick = function () {
@@ -174,7 +174,7 @@ document.getElementById('clw').onclick = function () {
     if (bt.value <= 0 ) {
         bt.value ='';
     }
-} 
+}
 
 document.getElementById('rm').onclick = function () {
     document.getElementById('qwe').style.display = 'none';
@@ -183,19 +183,19 @@ document.getElementById('rm').onclick = function () {
 if (w === '') {
     result.innerHTML ='';
       document.getElementById('pop').style.display = "none";
-         document.getElementById('anw').style.display = "none"; 
+         document.getElementById('anw').style.display = "none";
          document.getElementById('mar1').style.display = "block";
 document.getElementById('mar2').style.display = "none";
           alert('please insert a text');
-   } 
+   }
 
-    
+
 }
 
     else if (w = '') {
      alert('please insert a text');
         document.getElementById('pop').style.display = "none";
-         document.getElementById('anw').style.display = "none";    
+         document.getElementById('anw').style.display = "none";
     }
 }
    // ADD button
@@ -203,84 +203,84 @@ document.getElementById('mar2').style.display = "none";
 
                inpu.value = (++ inpu.value);
 
-         } 
+         }
 
          function plusa() {
-    
+
                inpua.value = (++ inpua.value);
 
-         } 
+         }
 
          function plusb() {
-    
+
                inpub.value = (++ inpub.value);
 
-         } 
+         }
 
          function plusc() {
-    
+
                inpuc.value = (++ inpuc.value);
 
-         } 
+         }
 
          function plusd() {
-    
+
                inpud.value = (++ inpud.value);
 
-         }  
+         }
 // The minus button
 function minus() {
     inpu.value = (-- inpu.value);
-               
+
 var a = inpu.value;
     if (a <= 0) {
         inpu.value ="none";
     }
 
-         } 
+         }
 
          function minusa() {
-    
+
                inpua.value = (-- inpua.value);
 
                var b = inpua.value;
     if (b <= 0) {
         inpua.value ="none";
-         } 
+         }
 }
          function minusb() {
-    
+
                inpub.value = (-- inpub.value);
                var c = inpub.value;
     if (c <= 0) {
         inpub.value ="none";
-         } 
+         }
 }
          function minusc() {
-    
+
                inpuc.value = (-- inpuc.value);
                var x = inpuc.value;
     if (x <= 0) {
         inpuc.value ="none";
-         } 
+         }
 }
          function minusd() {
-    
+
                inpud.value = (-- inpud.value);
                var v = inpud.value;
     if (v <= 0) {
         inpud.value ="none";
          }
 }
-                      
-               
-             
+
+
+
    // REMOVE button
          function remov() {
                 if (confirm('Do you wish to remove this category?.')) {
                document.getElementById('taxi').style.display="none";
-               inpu.value = '0';      
-                } 
+               inpu.value = '0';
+                }
 }
 
 function remova() {
@@ -301,7 +301,7 @@ function removc() {
     if (confirm('Do you wish to remove this category?.')) {
     document.getElementById('bicycle').style.display="none";
     inpuc.value = '0';
-} 
+}
 }
 
 function removd() {
@@ -311,11 +311,11 @@ function removd() {
 
 
     }
-} 
+}
 //  the total section
 function answer() {
      ans.value = Number(inpu.value ) + Number(inpua.value)  + Number(inpub.value)  + Number(inpuc.value)  + Number(inpud.value) + Number(bt.value);
-     
+
     alert('All done');
 }
 function clearq() {
