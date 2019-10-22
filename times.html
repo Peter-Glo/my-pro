@@ -29,15 +29,16 @@
 		<fieldset>
 			<legend>Falsetto  Multiplication Table Generator</legend>
 			Columns: <input type="number" id="col" name=""><br><br>
+			<select id="operator">
+				<option value="*">Multiply</option>
+				<option value="-">Subtract</option>
+				<option value="/">Division</option>
+				<option value="+">Addition</option>
+			</select><br><br>
 			Rows:    <input type="number" id="row" name=""><br><br><br>
 			<button onclick="display()">Display</button>&nbsp;&nbsp;&nbsp;&nbsp;
 
-		<select id="operator">
-		<option value="*">Multiply</option>
-		<option value="-">Subtract</option>
-		<option value="/">Divition</option>
-		<option value="+">Addition</option>
-	</select>
+
 	</fieldset>
 	</center>
 	<div id="yes"></div>
@@ -47,8 +48,7 @@
 
 		function display(){
 
-if (ope === '*') {
-			if (col.value <=0 && row.value <=0  || col.value =="" && row.value ==""){
+		if (col.value <=0 && row.value <=0  || col.value =="" && row.value ==""){
 				alert("Please enter a valid number to perform an operation")
 			}
 			else{
@@ -62,13 +62,13 @@ if (ope === '*') {
 	for(v=1;v<=row.value;v++)
 	{
 
-		y +="<tr><td>"+i+  v  +"="+ eval (i + operator.value)+ i + v+"</td></tr>";
+		y +="<tr><td>" +i+ operator.value + v +"="+ eval (i + operator.value + v)+ "</td></tr>";
 		}y += "</table></td>";
     }y += "</tr></table>";
     	yes.innerHTML= y;
     	}
 		}
-			}
+
 
 
 
