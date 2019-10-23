@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="counter1.css">
+<!-- <script href="react/build/react.js"> -->
     <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
     <title>Document</title>
 </head>
@@ -84,9 +85,9 @@
 function startTime() {
 
 var today = new Date();
-   var h = today.getHours();
-   var m = today.getMinutes();
-   var s = today.getSeconds();
+   var h = today.getUTCHours();
+   var m = today.getUTCMinutes();
+   var s = today.getUTCSeconds();
 m = checkTime(m);
 s = checkTime(s);
    document.getElementById('tim').value = h +'   :   ' + m + '    :    ' + s;
