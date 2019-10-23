@@ -1,0 +1,117 @@
+body{
+    background-color: #5CDB94;
+}
+#hh{
+    font-family: comic sans ms;
+    color: #EDF5E0;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+}
+#plus{
+    color: #05396B;
+}
+#hhh{
+    text-align: center;
+    text-align-last: center;
+    color: #05396B;
+}
+.welc{
+    color: #389583;
+    margin-top: -100px;
+}
+.welc h3{
+    color: #05396B; 
+}
+#mv{
+    margin-top: 200px;
+}
+#mmm{
+    text-align: center;
+    color: #05396B;
+}
+.modalDialog{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modalDialog , div{
+    width: 300px;
+    position: relative;
+    margin: 20% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 20px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff; #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.close{
+    background: #606061;
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover{
+    background: #00d9ff;
+}
+.ul{
+    list-style: none;
+}
+.ul button{
+    border: none;
+    outline-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #05396B;
+}
+#taxi{
+    width: 100%;
+    display: none;
+}
+#taxi input{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;  
+}
+#privatecars{
+
+    display: none;
+}
+#bus{
+    display: none;
+}
+#bh{
+    display: inline;
+
+}

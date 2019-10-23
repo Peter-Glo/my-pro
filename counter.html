@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+<link rel="stylesheet" type="text/css" href="counter.css">
+	<title>COUNTER</title>
+</head> 	
+<body class="bg-warning">
+	<marquee><h1>WELCOME</h1></marquee>
+<div class="all bg-info">
+<i class="fa fa-car"><strong class="coun">counter</strong></i>
+	<div class="intro bg-success"><h4 class="introh">welcome guys this web application is programmed for counting majorly for counting vehicles,bike,taxis and trucks thanks for your patroinage..</h4></div>
+<div id="result">
+	<div id="taxi">
+	<strong><i class="fa fa-taxi">taxis</i></strong><br>
+<input type="number" id="display" name="" minlength="0" disabled>
+<br>
+<button id="pep" onclick="plus()">Taxi</button> <button id="wep" onclick="minus()">clear</button> <button onclick="Remove()" id="wep">Remove</button></div>
+<br>
+<div id="motorcycle">
+<strong><i class="fa fa-motorcycle">motorcycles</i></strong><br>
+<input type="number" id="displaya" name="" minlength="0" disabled>
+<br>
+<button id="pep" onclick="plusa()">Motorcycles</button> <button id="wep" onclick="minusa()">clear</button> <button onclick="Removem()" id="wep">Remove</button></div>
+<br>
+<div id="car">
+<strong><i class="fa fa-car">cars</i></strong><br>
+<input type="number" id="displayb" name="" minlength="0" min="0" disabled>
+<br>
+<button id="pep" onclick="plusb()">Car</button> <button id="wep" onclick="minusb()">clear</button> <button onclick="Removec()" id="wep">Remove</button></div>
+<br>
+<div id="truck">
+<strong><i class="fa fa-truck">trucks</i></strong><br>
+<input type="number" id="displaye" name="" minlength="0" disabled>
+<br>
+<button id="pep" onclick="pluse()">Truck</button> <button id="wep" onclick="minuse()">clear</button> <button onclick="Removet()" id="wep">Remove</button></div>
+</div>
+<br>
+<br>
+
+<div id="pop" class="pop-up"><a href="#close" class="close">&times;</a>
+
+<ul class="ul">
+	<li><i class="fa fa-taxi"><button type="button" class="btn" onclick="counter1()">Taxis</button></i></li>
+	<li><i class="fa fa-motorcycle"><button type="button" class="btn" onclick="counter2()">motorcycles</button></i></li>
+	<li><i class="fa fa-car"><button type="button" class="btn" onclick="counter3()">Cars</button></i></li>
+	<li><i class="fa fa-truck"><button type="button" class="btn" onclick="counter4()">Trucks</button></i></li>
+	
+</ul>
+</div>
+<div class="add">
+	<a href="#pop" id="fab" onclick="fab()" ><i class="fa fa-plus-circle"></i></a><br>
+	&nbsp;&nbsp;&nbsp;<b class="dep">click to add category...</b>
+</div>	
+<div>
+	<input id="answer" type="number">
+	
+	<button>Equals</button>
+</div>
+</div>
+
+<script type="text/javascript">
+var e = "";
+
+	function counter1() {
+		document.getElementById('taxi').style.display = "block";
+
+		document.getElementById('pop').style.display = "none";
+	}
+function counter2() {
+	document.getElementById('motorcycle').style.display = "block";
+
+		document.getElementById('pop').style.display = "none";
+}
+
+function counter3() {
+	document.getElementById('car').style.display = "block";
+
+		document.getElementById('pop').style.display = "none";
+}
+
+function counter4() {
+	document.getElementById('truck').style.display = "block";
+
+		document.getElementById('pop').style.display = "none";
+}
+function fab(){
+	document.getElementById('pop').style.display = "block";
+}
+
+function plus() {
+	display.value = (++ display.value);
+}
+function minus() {
+	display.value = (-- display.value);
+}
+
+
+
+
+function plusa() {
+	displaya.value = (++ displaya.value);
+}
+function minusa() {
+	displaya.value = (-- displaya.value);
+}
+
+
+
+
+
+function plusb() {
+	displayb.value = (++ displayb.value);
+}
+function minusb() {
+	displayb.value = (-- displayb.value);
+}
+
+
+
+
+
+
+function pluse() {
+	displaye.value = (++ displaye.value);
+}
+function minuse() {
+	displaye.value = (-- displaye.value);
+}
+
+function Remove() {
+	document.getElementById('taxi').style.display="none";
+}
+
+function Removem() {
+	document.getElementById('motorcycle').style.display="none";
+}
+
+function Removec() {
+	document.getElementById('car').style.display="none";
+}
+
+function Removet() {
+	document.getElementById('truck').style.display="none";
+}
+</script>
+</body>
+</html>
