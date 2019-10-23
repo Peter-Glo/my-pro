@@ -23,11 +23,15 @@
 	#yes{
 		background-color: pink;
 	}
+#yes:hover{
+font-size: 30px;
+transition: 2s;
+}
 
 	</style>
 	<center>
 		<fieldset>
-			<legend>Falsetto  Multiplication Table Generator</legend>
+			<legend>PETER  Multiplication Table Generator</legend>
 			Columns: <input type="number" id="col" name=""><br><br>
 			<select id="operator">
 				<option value="*">Multiply</option>
@@ -65,7 +69,7 @@
 		y +="<tr><td>" +i+ operator.value + v +"="+ eval (i + operator.value + v)+ "</td></tr>";
 		}y += "</table></td>";
     }y += "</tr></table>";
-    	yes.innerHTML= y;
+    	yes.innerHTML= y
     	}
 		}
 
