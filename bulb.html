@@ -21,17 +21,21 @@ width: 60px;
 </head>
 <body>
 <img src="img/bub.jpg" id="off">
-<button class="btn bg-warning" onclick="on()">on</button>
-<button class="btn bg-warning" onclick="off()">off</button>
+<button class="btn bg-warning" id="on" style=" margin-top: -30%; margin-left: 50%;" onclick="on()">on</button>
+<button class="btn bg-warning" id="off1" onclick="off()" style="display: none; margin-top: -30%; margin-left: 50%;">off</button>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script>
 function on(){
 document.getElementById('off').src='img/bub1.jpg';
+document.getElementById('on').style.display = 'none';
+document.getElementById('off1').style.display = 'block';
 }
 function off(){
 document.getElementById('off').src='img/bub.jpg';
+document.getElementById('on').style.display = 'block';
+document.getElementById('off1').style.display = 'none' ;
 }
 </script>
 
