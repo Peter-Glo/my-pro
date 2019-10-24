@@ -315,9 +315,13 @@ function removd() {
 }
 //  the total section
 function answer() {
-     ans.value = Number(inpu.value ) + Number(inpua.value)  + Number(inpub.value)  + Number(inpuc.value)  + Number(inpud.value) + Number(bt.value);
+if (ans.value === "") {
+alert('count before asking for total please');
+ans.value = "";
+}
+ans.value = Number(inpu.value ) + Number(inpua.value)  + Number(inpub.value)  + Number(inpuc.value)  + Number(inpud.value) + Number(bt.value);
+alert('All done');
 
-    alert('All done');
 }
 function clearq() {
     ans.value = "";
